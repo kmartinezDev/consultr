@@ -14,6 +14,7 @@ class ImportFile extends Command
 {   
     public $data = [];
     public $features = [];
+    public $dir = '/var/www/laravel-app/csv/superheros.csv';
     
     /**
      * The name and signature of the console command.
@@ -68,11 +69,11 @@ class ImportFile extends Command
 
     private function readDoc($methodCalled){
 
-        $dir = '/var/www/laravel-app/csv/superheros.csv';
-        print_r("ruta definida: {$dir}"); echo "\n"; 
+        
+        print_r("ruta definida: {$this->dir}"); echo "\n"; 
     
-        if(is_file($dir)) {
-            $handle = fopen($dir, "r");
+        if(is_file($this->dir)) {
+            $handle = fopen($this->dir, "r");
             $row = 0;
             while ($record = fgetcsv($handle, 1000, ",")) {
                 if($row){

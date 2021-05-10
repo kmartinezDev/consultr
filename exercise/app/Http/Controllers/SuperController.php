@@ -14,7 +14,7 @@ class SuperController extends Controller
         $order = $request->order ?? 'superheroes.name';
         $order_value = $request->order_value ?? 'desc';
 
-        if($order == 'race') $order = 'races.name';
+        if($order == 'races') $order = 'races.name';
         if($order == 'publishers') $order = 'publishers.name';
         if($order == 'eyes') $order = 'eye_colors.name';
         if($order == 'hairs') $order = 'hair_colors.name';
