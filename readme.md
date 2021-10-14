@@ -39,12 +39,3 @@ Generate a API endpoint to retrieve superheroes. The endpoint need to be able to
 2. Once you cloned the repository, you will need to create a MySQL database
 3. Setup the `exercise/.env` file
 4. Execute the command: `sh scripts/install.sh`
-5. You are ready to start coding.
- 
-## Q&A 
-
-### Doubts?
-You can send us an email to federico.cardinali@consultr.net
-
-### Finished?
-You can send us an email to federico.cardinali@consultr.net with a git repository link and instructions to run the exercise.
